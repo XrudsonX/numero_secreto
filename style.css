@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --font-family: 'Open Sans', sans-serif;
+    --bg-color: linear-gradient(0deg, rgba(6,0,71,1) 15%, rgba(179,0,94,1) 100%) no-repeat;
+    --primary-color:#00FFD1;
+    --cor-erro: #E94560;
+}
+
+body{
+    height: 100vh;
+    background: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 46px;
+    margin-top: 0.5em;
+}
+
+h2{
+    font-size: 3.5em;
+}
+
+h3{
+    font-size: 28px;
+    margin: 0.5em 0;
+}
+
+.mensagem{
+    font-size: 1.5em;
+}
+
+.box{
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+.erro{
+    color: var(--cor-erro);
+}
+
+.acerto{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 720px){
+    body{
+        justify-content: center;
+
+    }
+
+    h1{
+        font-size: 6em;
+    }
+
+    h2{
+        font-size: 8em;
+    }
+
+    h3{
+        font-size: 3em;
+    }
+
+    .mensagem{
+        font-size: 2em;
+        margin-top: 50px;
+    }
+
+    .box{
+        border-radius: 15px;
+        padding: 15px;
+        font-size: 4em;
+    }
+}
+
